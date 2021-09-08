@@ -2,7 +2,7 @@
 @Author: Ariprasath
 @Date: 2021-09-08 19:46:00
 @Last Modified by: Ariprasath
-@Last Modified time: 2021-09-08 20:17:00
+@Last Modified time: 2021-09-08 20:38:00
 @Title : find three numbers from a array that adds to zero
 '''
 
@@ -10,14 +10,12 @@ import random
 
 def zero_check(integers):
     '''
-    Args: 
-        An array containing integers  between -9 and 9
-    Action:
+    Description:
         Finds the three distinct integers that sums to zero
-    Returns:
+    Parameter: 
+        integers(list): A list containing integers  between -9 and 9
+    Return:
         Three distinc intgers
-    Raises:
-        None 
     '''
     for i in range(0,len(integers)):
         for j in range(i+1,len(integers)):
