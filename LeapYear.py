@@ -7,17 +7,33 @@
 '''
 
 def leap_year_check(year):
-    if year%400 == 0:
-        print("{} is a leap year".format(year))
-    elif year%100 == 0:
-        print("{} is a non-leap year".format(year))
-    elif year%4 == 0:
+    '''
+    Args:
+        year: Year in the format YYYY
+    Action:
+        Validates the year is leap year or not
+    Return:
+        A string representing leap year or not
+    Raises:
+        None
+     '''
+    if year%400 == 0 or (year%100 != 0 and year%4 == 0):
         print("{} is a leap year".format(year))
     else:
         print("{} is a non-leap year".format(year))
 
 
 def leap_year():
+    '''
+    Args:
+        None
+    Action:
+        Gets the year from the user and validates whether it is in the format YYYY
+    Returns:
+        None
+    Raises:
+        None        
+    '''
     year=input("Enter the year in the format YYYY\n")
     if len(year)!=4:
         print("You have entered the year in a wrong format\n")
@@ -25,4 +41,5 @@ def leap_year():
     else:
         leap_year_check(int(year))
 
-leap_year()
+if __name__=="__main__":
+    leap_year()
