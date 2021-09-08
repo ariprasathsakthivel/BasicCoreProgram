@@ -2,7 +2,7 @@
 @Author: Ariprasath
 @Date: 2021-09-08 18:43:00
 @Last Modified by: Ariprasath
-@Last Modified time: 2021-09-08 18:36:00
+@Last Modified time: 2021-09-08 18:50:00
 @Title : Harmonic number
 '''
 
@@ -13,4 +13,4 @@ while initial_value<=limit:
         print(f"1/{initial_value}+",end='')
     elif initial_value==limit:
         print(f"1/{initial_value}",end='')
-    initial_value+=1
+    initial_value+=1    
